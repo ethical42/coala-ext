@@ -1,0 +1,16 @@
+{
+	"name": "Coala",
+	"description": "Overrides the new tab page",
+	"version": "1.0",
+	"incognito": "split",
+	"content_security_policy":"script-src 'self' https://code.jquery.com/jquery-3.3.1.js; object-src 'self'",
+	"chrome_url_overrides": {
+		"newtab": "new-tab.html"
+	},
+	"icons": {
+		"16": "images/koala-16.png",
+		"48": "images/koala-48.png",
+		"128": "images/koala-128.png"
+	},
+	"manifest_version": 2
+}
