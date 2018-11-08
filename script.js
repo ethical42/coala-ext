@@ -5,9 +5,8 @@ function data() {
 }
 
 $(function() {
-	
 	data();
 
 	setInterval(data, 1000);
-
 });
+
