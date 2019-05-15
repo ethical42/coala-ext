@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="moment.js"></script>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <title>root@127.0.0.1:~#</title>
+    <style>
+    html,
+    body {
+        background-color: #fff;
+        margin: 0;
+    }
+
+    .popup-container {
+        float: left;
+        padding: 20px;
+        width: 100px;
+    }
+
+    .container {
+        border-bottom: 1px solid #e6e6e6;
+        display: block;
+        float: left;
+        margin-bottom: 10px;
+        padding-bottom: 12px;
+    }
+
+    .container:last-of-type {
+        border-bottom: 0;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .container label {
+        color: #333;
+        float: left;
+        font-size: 10px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+
+    .btn {
+        background-color: #1e83bd;
+        border: 0;
+        border-radius: 3px;
+        cursor: pointer;
+        color: #fff;
+        display: block;
+        font-size: 8px;
+        font-weight: 700;
+        padding: 10px;
+        margin: 0 auto;
+        text-transform: uppercase;
+        -webkit-transition: background-color .2s ease-in-out;
+        transition: background-color .2s ease-in-out;
+        width: 100%;
+    }
+
+    .btn:hover {
+        background-color: #126ca0;
+    }
+
+    .btn:focus {
+        outline: none;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="popup-container">
+        <div class="container">
+            <label>Clear last 2 hours of history</label>
+            <button class="btn clear-history">Clear History</button>
+        </div>
+
+        <div class="container">
+            <label>Clear last 2 hours of cache</label>
+            <button class="btn clear-cache">Clear Cache</button>
+        </div>
+
+        <div class="container">
+            <label>Clear all time cache and history</label>
+            <button class="btn clear-all">Clear All</button>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,7 +1,7 @@
 {
 	"name": "Coala",
-	"description": "Overrides the new tab page",
-	"version": "1.0",
+	"description": "Join us on Coala. This plugin overrides the new tab page and lets you clear cache and history storage with just one mouse click.",
+	"version": "1.1",
 	"incognito": "split",
 	"content_security_policy":"script-src 'self' https://code.jquery.com/jquery-3.3.1.js; object-src 'self'",
 	"chrome_url_overrides": {
@@ -12,5 +12,12 @@
 		"48": "images/koala-48.png",
 		"128": "images/koala-128.png"
 	},
+	"browser_action": {
+		"default_popup": "popup.html",
+		"default_title": "PopUp"
+	},
+	"permissions": [
+      "browsingData"
+    ],
 	"manifest_version": 2
 }
