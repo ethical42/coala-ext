@@ -1,2 +1,2 @@
 # Google Chrome Extension
-This is a Google Chrome extension to be able to make a custom new tab page.
+This plugin overrides the new tab page and lets you clear cache and history storage with just one mouse click.
