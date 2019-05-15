@@ -13,7 +13,7 @@ $(function() {
 
 	// Clear last two hours of history
 	$(".clear-history").on("click", function() {
-        var ms = (60 * 60 * 60) * 1000; // 2 hours
+        var ms = 7200000; // 2 hours
         var twoHoursAgo = (new Date()).getTime() - ms;
         chrome.browsingData.remove({
           "since": twoHoursAgo
@@ -26,7 +26,7 @@ $(function() {
 
     // Clear last two hours of cache
     $(".clear-cache").on("click", function() {
-        var ms = (60 * 60 * 60) * 1000; // 2 hours
+        var ms = 7200000 // 2 hours
         var twoHoursAgo = (new Date()).getTime() - ms;
         chrome.browsingData.remove({
           "since": twoHoursAgo
