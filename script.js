@@ -21,7 +21,7 @@ $(function() {
           "history": true,
         });
 
-        alert("Last 2 hours of history cleared successfully!");
+        $(this).closest(".container").find("label").addClass("done").text("Done!");
 	});
 
     // Clear last two hours of cache
@@ -34,7 +34,7 @@ $(function() {
           "cache": true,
         });
 
-        alert("Last 2 hours of cache cleared successfully!");
+        $(this).closest(".container").find("label").addClass("done").text("Done!");
 	});
 
     // Clear last two hours of all cache and history
@@ -46,6 +46,6 @@ $(function() {
           "cache": true
         });
 
-        alert("All cache and history cleared successfully!");
+        $(this).closest(".container").find("label").addClass("done").text("Done!");
 	});
 });
